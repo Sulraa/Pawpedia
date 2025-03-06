@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Pet Care Guide</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="image/logos.png" alt="Pet Care Logo" class="logo-img">
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="essential.html">Essential Care</a>
+            <a href="about.html" class="active">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="auth-buttons">
+            <button class="btn sign-in">Sign Up</button>
+            <button class="btn log-in">Sign In</button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="about-hero">
+            <div class="about-hero-content">
+                <h1>About Pet Care Guide</h1>
+                <p>Your trusted companion in pet care education</p>
+            </div>
+        </section>
+
+        <section class="about-content">
+            <div class="mission">
+                <h2>Our Mission</h2>
+                <p>We are dedicated to providing comprehensive, reliable information to help pet owners make informed decisions about their pets' care and well-being.</p>
+            </div>
+
+            <div class="team">
+                <h2>Our Team</h2>
+                <div class="swiper team-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="team-member" data-member="ritz">
+                                <img src="image/team1.jpg" alt="Ritz Martin R. Dela Rosa">
+                                <h3>Dela Rosa, Ritz Martin R.</h3>
+                                <p>Asst. Programmer</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="team-member" data-member="charlon">
+                                <img src="image/team2.jpg" alt="Charlon R. Sangoyo">
+                                <h3>Sangoyo, Charlon R.</h3>
+                                <p>Project Manager</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="team-member" data-member="krizza">
+                                <img src="image/team3.jpg" alt="Krizza Angela C. Barroga">
+                                <h3>Barroga, Krizza Angela C.</h3>
+                                <p>UI/UX Designer</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="team-member" data-member="hazel">
+                                <img src="image/team4.jpg" alt="Ma. Hazel Z. Demorin">
+                                <h3>Demorin, Ma. Hazel Z.</h3>
+                                <p>Lead Researcher</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="team-member" data-member="anne">
+                                <img src="image/team5.jpg" alt="Hazel Anne J. Guanzing">
+                                <h3>Guanzing, Hazel Anne J.</h3>
+                                <p>Asst. Researcher</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="team-member" data-member="ricardo">
+                                <img src="image/team6.jpg" alt="Ricardo Carlos C. Lizarondo">
+                                <h3>Lizarondo, Ricardo Carlos C.</h3>
+                                <p>Lead Programmer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+
+            <div class="values">
+                <h2>Our Values</h2>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon">🎯</div>
+                        <h3>Expertise</h3>
+                        <p>Professional guidance backed by years of experience in pet care and animal welfare</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">💝</div>
+                        <h3>Compassion</h3>
+                        <p>Understanding and caring for every pet's unique needs with genuine love and dedication</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">🤝</div>
+                        <h3>Community</h3>
+                        <p>Building a supportive network of pet lovers, sharing knowledge and experiences</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Sign Up Modal -->
+    <div class="modal" id="signUpModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-img-container">
+                <img src="image/pets.png" alt="Pet Care Guide" class="modal-img">
+            </div>
+            <div class="form-section">
+                <h2>SIGN UP</h2>
+                <form id="signUpForm">
+                    <div class="form-group">
+                        <input type="text" id="fullName" name="fullName" placeholder="Enter Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="signUpEmail" name="email" placeholder="Enter an email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="signUpPassword" name="password" placeholder="Enter a password" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter a password" required>
+                    </div>
+                    <button type="submit" class="btn submit-btn">SIGN UP</button>
+                    <p id="already">Already have an account?</p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-img-container">
+                <img src="image/pets.png" alt="Pet Care Guide" class="modal-img">
+            </div>
+            <div class="form-section">
+                <h2>SIGN IN</h2>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <input type="email" id="loginEmail" name="email" placeholder="Enter an email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="loginPassword" name="password" placeholder="Enter a password" required>
+                    </div>
+                    <div class="form-options">
+                        <label class="remember-me">
+                            <input type="checkbox" name="remember">
+                            <span>Remember me</span>
+                        </label>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn submit-btn">SIGN IN</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Team Member Modal -->
+    <div class="team-modal" id="teamModal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <div class="modal-profile">
+                <img src="" alt="" class="modal-team-img">
+                <h2></h2>
+                <p class="role"></p>
+            </div>
+            <div class="about-section">
+                <h3>About</h3>
+                <p class="about"></p>
+            </div>
+            <button class="modal-arrow prev">&larr;</button>
+            <button class="modal-arrow next">&rarr;</button>
+            <div class="modal-nav">
+                <span class="modal-nav-dot active"></span>
+                <span class="modal-nav-dot"></span>
+                <span class="modal-nav-dot"></span>
+                <span class="modal-nav-dot"></span>
+                <span class="modal-nav-dot"></span>
+                <span class="modal-nav-dot"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="auth.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

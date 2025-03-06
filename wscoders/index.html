@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Care Guide</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="image/logos.png" alt="Pet Care Logo" class="logo-img">
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="essential.html">Essential Care</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="auth-buttons">
+            <button class="btn sign-in">Sign Up</button>
+            <button class="btn log-in">Sign In</button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Your Ultimate Guide to Cats and Dogs</h1>
+                <p>Learn, Care, and Choose Wisely!</p>
+                <button class="btn explore">Explore Now</button>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="card">
+                <img src="image/300x2001.jpg" alt="Breed Encyclopedia">
+                <h3>Breed Encyclopedia</h3>
+            </div>
+            <div class="card">
+                <img src="image/paw1.png" alt="Body Language">
+                <h3>Body Language</h3>
+            </div>
+            <div class="card">
+                <img src="image/300x2003.jpg" alt="Latest Pet Care Tips">
+                <h3>Latest Pet Care Tips</h3>
+            </div>
+        </section>
+    </main>
+
+    <!-- Sign Up Modal -->
+    <div class="modal" id="signUpModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-img-container">
+                <img src="image/pets.png" alt="Pet Care Guide" class="modal-img">
+            </div>
+            <div class="form-section">
+                <h2>SIGN UP</h2>
+                <form id="signUpForm">
+                    <div class="form-group">
+                        <input type="text" id="fullName" name="fullName" placeholder="Enter Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="signUpEmail" name="email" placeholder="Enter an email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="signUpPassword" name="password" placeholder="Enter a password" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter a password" required>
+                    </div>
+                    <button type="submit" class="btn submit-btn">SIGN UP</button>
+                    <p id="already">Already have an account?</p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-img-container">
+                <img src="image/pets.png" alt="Pet Care Guide" class="modal-img">
+            </div>
+            <div class="form-section">
+                <h2>SIGN IN</h2>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <input type="email" id="loginEmail" name="email" placeholder="Enter an email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="loginPassword" name="password" placeholder="Enter a password" required>
+                    </div>
+                    <div class="form-options">
+                        <label class="remember-me">
+                            <input type="checkbox" name="remember">
+                            <span>Remember me</span>
+                        </label>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn submit-btn">SIGN IN</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="auth.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
